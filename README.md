@@ -1,1 +1,1 @@
-# EcoTips-Grupo3
+# EcoTips
