@@ -1,0 +1,41 @@
+#contenido {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: clamp(16px, 3vw, 24px) clamp(16px, 4vw, 32px) max(24px, 96px);
+  display: grid;
+  gap: clamp(16px, 2vw, 24px);
+}
+
+/* Benefits grid */
+.beneficios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+}
+
+.beneficios > li {
+  border: 1px solid currentColor;
+  border-radius: 12px;
+  padding: 0.75rem;
+}
+
+/* Impact meters */
+.impacto-metros {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+/* FAQ anchor offset to avoid fixed footer overlap */
+#faq {
+  scroll-margin-block-end: max(96px, 10vh);
+  margin-bottom: 36px;
+}
+
+/* Footer spacer to guarantee space above fixed footer */
+.footer-spacer {
+  height: max(96px, 12vh);
+}

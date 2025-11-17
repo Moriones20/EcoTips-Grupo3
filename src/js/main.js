@@ -1,2 +1,8 @@
-// main.js (placeholder)
-// Añadir scripts JavaScript aquí. Mantener código modular en src/js/
+// Punto de entrada: monta componentes y lógica de la aplicación
+import { renderContent } from "../components/content/content.js";
+
+// ----------------------------------------
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderContent();
+});
