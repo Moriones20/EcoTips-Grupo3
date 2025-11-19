@@ -19,3 +19,30 @@ footer {
   left: 0;
   width: 100%;
 }
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.footer-section {
+  max-width: 250px;
+  margin: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+}
+hr{
+border: 1px solid #fff ;
+}
