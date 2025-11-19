@@ -1,0 +1,111 @@
+#header {
+  width: 100%;
+  background: linear-gradient(135deg, #2e9e5b, #1e6f3d);
+  color: white;
+  padding-bottom: 50px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.30);
+  border-bottom: 5px solid #14512c;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Texto del logo (solo texto, ya sin imagen) */
+.logo-text-only {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Menu */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fdfdfd;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #c4ffdb;
+  text-shadow: 0px 0px 8px rgba(220, 255, 230, 0.6);
+}
+
+/* ================= HEADER CONTENT ================= */
+.header-content {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Título gigante */
+.header-title {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Subtítulo */
+.header-subtitle {
+  font-size: 1.6rem;
+  margin-top: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+/* ================= ANIMACIÓN ================= */
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 1.4s forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .header-title {
+    font-size: 3rem;
+  }
+
+  .header-subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 2.5rem;
+  }
+}
